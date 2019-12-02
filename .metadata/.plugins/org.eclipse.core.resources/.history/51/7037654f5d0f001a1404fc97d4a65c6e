@@ -1,0 +1,15 @@
+package com.arms.domain.entity;
+import org.hibernate.validator.constraints.NotEmpty;
+
+import com.sun.istack.NotNull;
+
+import javax.persistence.Entity; import javax.persistence.GeneratedValue; import javax.persistence.Id;
+@Entity
+public class Hello1 {
+	@Id 
+	@GeneratedValue 
+	private int id;
+	
+	@NotNull
+	private String name;
+}
